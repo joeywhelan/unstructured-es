@@ -3,13 +3,11 @@
 # Unstructured Data Search With Elastic + Jina
 *Demonstration of the use of Jina models and Elastic to search technical manuals*
 
-Through use of Jina models, we can extract both the lexical and semantic details of unstructured data such as technical manuals.  Indexing that extracted data in Elasticsearch opens up many use cases for these manuals that would not otherwise be accessible.
+Through the use of Jina models, we can extract both the lexical and semantic details of unstructured data, such as technical manuals.  Indexing that extracted data in Elasticsearch opens up many use cases for these manuals that would not otherwise be accessible.
   
 ---
 
 ## What This Article Covers
-
-I cover the following topics:
 
 - Provisioning an [Elastic Serverless](https://www.elastic.co/cloud/serverless) project via Terraform
 - Creating a data set from [iFixit](https://www.ifixit.com/) technical manuals
