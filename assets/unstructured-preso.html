@@ -550,8 +550,7 @@ code {
     <tr><th>Capability</th><th class="elastic">Elastic</th><th class="others">Competitors</th></tr>
     <tr><td>BM25 / Lexical search</td><td class="win">&#x2705; Native, same index</td><td class="lose">&#x274C; Not available &mdash; build separately</td></tr>
     <tr><td>Semantic search</td><td class="win">&#x2705; Native <code>semantic_text</code> field</td><td class="win">&#x2705; Vector Search</td></tr>
-    <tr><td>Hybrid BM25 + Semantic (RRF)</td><td class="win">&#x2705; RRF retriever, built-in</td><td class="lose">&#x274C; External orchestration required</td></tr>
-    <tr><td>Reranker</td><td class="win">&#x2705; <code>text_similarity_reranker</code></td><td class="lose">&#x274C; Not available</td></tr>
+    <tr><td>Reranker (cross-attention)</td><td class="win">&#x2705; Jina Reranker v3 via inference API</td><td class="lose">&#x274C; Not available</td></tr>
     <tr><td>Compare strategies in one call</td><td class="win">&#x2705; Same <code>es.search()</code> call</td><td class="lose">&#x274C; Separate systems, merge in app code</td></tr>
   </table>
 </div>
@@ -669,8 +668,8 @@ code {
       <p>Range, term, bool, nested, geo &mdash; composable with any retrieval strategy</p>
     </div>
     <div class="cap-card anim">
-      <h3>RRF Built-in</h3>
-      <p>Reciprocal Rank Fusion as a first-class retriever &mdash; no plugin, no orchestration layer</p>
+      <h3>Reranker Integration</h3>
+      <p>Jina Reranker v3 via inference API &mdash; cross-attention re-ranking with no external orchestration</p>
     </div>
   </div>
 </div>
@@ -679,7 +678,7 @@ code {
 <div class="slide" data-slide="12">
   <h2 class="anim">Simple to Deploy. Powerful at Scale.</h2>
   <div class="diagram-wrap anim">
-    <svg width="800" height="340" viewBox="0 0 800 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="860" height="340" viewBox="0 0 860 340" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Pipeline row -->
       <rect x="10" y="20" width="120" height="46" rx="8" fill="#1a1a2e" stroke="#00bfb3" stroke-width="1.5"/>
       <text x="70" y="48" text-anchor="middle" fill="#fff" font-family="Inter" font-size="12" font-weight="600">Repair Manuals</text>
@@ -722,7 +721,7 @@ code {
       <rect x="265" y="180" width="170" height="70" rx="8" fill="#1a1a2e" stroke="#00bfb3" stroke-width="1.5"/>
       <text x="350" y="207" text-anchor="middle" fill="#00bfb3" font-family="Inter" font-size="11" font-weight="700">Scenario 2</text>
       <text x="350" y="225" text-anchor="middle" fill="#fff" font-family="Inter" font-size="12">Hybrid + Reranker</text>
-      <text x="350" y="242" text-anchor="middle" fill="#8d9db6" font-family="Inter" font-size="10">BM25 + Semantic + RRF</text>
+      <text x="350" y="242" text-anchor="middle" fill="#8d9db6" font-family="Inter" font-size="10">Semantic + Jina Reranker</text>
 
       <rect x="465" y="180" width="170" height="70" rx="8" fill="#1a1a2e" stroke="#00bfb3" stroke-width="1.5"/>
       <text x="550" y="207" text-anchor="middle" fill="#00bfb3" font-family="Inter" font-size="11" font-weight="700">Scenario 3</text>
